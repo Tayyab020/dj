@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './layout'; // Assuming Layout is a wrapper component for nested routes
+
 import Dashboard from './pages/dashboard';
 import RequestSongs from './pages/requestsongs';
 import ApprovedSongs from './pages/approvedsongs';
@@ -21,7 +21,7 @@ import Whychoose from './components/whychoose';
 import Slider from './components/slider';
 import Header from './components/header';
 import Footer from './components/footer';
-
+import Side from './pages/side';
 import './styles/bootstrap.min.css';
 import './styles/nice-select.css';
 import './styles/font-awesome.min.css';
@@ -34,6 +34,7 @@ import './styles/magnific-popup.css';
 import './styles/normalize.css';
 import './styles/responsive.css';
 import './styles/styles.css';
+import './styles/slick.css';
 
 function App() {
   return (
@@ -49,7 +50,14 @@ function App() {
         <Route path="/Djsignup" element={<Djsignup/>} />
         <Route path="/Djlogin" element={<Djlogin/>} />
         <Route path="/OTP" element={<Otp/>} />
+        <Route path="/Side" element={<Side/>} />
 
+        <Route path="/" element={<Dashboard />} />
+          <Route path="/requests" element={<RequestSongs />} />
+          <Route path="/approved" element={<ApprovedSongs />} />
+          <Route path="/transactions" element={<TransactionHistory />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/upload" element={<UploadSongs />} />
       </Routes>  
     
      <Routes>

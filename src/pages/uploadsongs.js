@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-
+import Side from './side'
 const TableContainer = styled.div`
   overflow-x: auto;
   margin-top: 20px;
@@ -144,6 +144,8 @@ const UploadSongs = () => {
   };
 
   return (
+    <>
+    <Side/>
     <div>
       <CreateButton onClick={openModal}>Create</CreateButton>
 
@@ -234,6 +236,8 @@ const UploadSongs = () => {
         </Table>
       </TableContainer>
     </div>
+    </>
+   
   );
 };
 
