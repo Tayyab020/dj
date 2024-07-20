@@ -3,6 +3,7 @@ import logo from '../img/logo.png';
 import { Link } from 'react-router-dom';
 import profileImage from '../img/about-img.jpg'; // Ensure the path is correct
 import Header2 from '../components/header2';
+import Footer from '../components/footer';
 const dj = () => {
   return (
     <div>
@@ -39,7 +40,8 @@ const dj = () => {
         </div>
       </div>
     </div>
-
+ 
+    <Footer />
     </div>
   )
 }

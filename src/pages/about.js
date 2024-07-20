@@ -4,6 +4,7 @@ import logo from '../img/logo.png'; // Ensure the path is correct
 // import sectionImg from '../img/section-img.png'; // Ensure the path is correct
 import aboutImg from '../img/about-img.jpg'; // Ensure the path is correct
 import Header2 from '../components/header2';
+import Footer from '../components/footer';
 const About = () => {
   return (
     <>
@@ -39,6 +40,8 @@ const About = () => {
         </div>
       </section>
       {/* End Why Choose */}
+       
+      <Footer />
     </>
   );
 };

@@ -15,6 +15,7 @@ import Login from './pages/login';
 import Signup from './pages/signup'
 import Djsignup from './pages/djsignup'
 import Djlogin from './pages/djlogin'
+import Otp from './pages/optVerification'
 import Newsletter from './components/newsletter';
 import Whychoose from './components/whychoose';
 import Slider from './components/slider';
@@ -47,9 +48,10 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/Djsignup" element={<Djsignup/>} />
         <Route path="/Djlogin" element={<Djlogin/>} />
+        <Route path="/OTP" element={<Otp/>} />
 
       </Routes>  
-      <Footer />
+    
      <Routes>
         {/* Define nested routes if Layout is used */}
         {/* <Route path="/dashboard" element={<Layout />}>

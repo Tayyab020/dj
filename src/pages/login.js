@@ -4,6 +4,7 @@ import logo from '../img/logo.png';
 import { Link } from 'react-router-dom';
 import profileImage from '../img/about-img.jpg';
 import Header2 from '../components/header2';
+import Footer from '../components/footer';
 const login = () => {
   return (
     <div>
@@ -56,6 +57,8 @@ const login = () => {
         </div>
       </div>
     </section>
+     
+    <Footer />
     </div>
   )
 }

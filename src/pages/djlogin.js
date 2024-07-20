@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header2 from '../components/header2';
+import Footer from '../components/footer';
 const DjLogin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -77,6 +78,8 @@ const DjLogin = () => {
         </div>
       </div>
     </section>
+     
+    <Footer />
     </>
     
   );
