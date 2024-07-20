@@ -1,0 +1,96 @@
+.profile-container {
+  padding: 20px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.profile-form {
+  flex: 1;
+  max-width: 50%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.update-button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.image-placeholder i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.image-placeholder p {
+  margin: 0;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.upload-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-form, .profile-image {
+    max-width: 100%;
+  }
+}
